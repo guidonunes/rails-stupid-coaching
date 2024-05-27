@@ -1,0 +1,16 @@
+<div class="container bg-light rounded">
+  <h1 class="text-dark text-center my-5"> Your coach has answered!</h1>
+  <div class="text-center">
+    <div>
+      <%=@input%>
+      <p class="p-3"> - You</p>
+    </div>
+    <div class="bg-warning p-3">
+      <%=@result%>
+      <p class="mt-2">- Your coach</p>
+    </div>
+  </div>
+  <div class="text-center text-decoration-none font-weight-bold">
+    <%= link_to "Ask another question", ask_path, class: "btn btn-danger text-decoration-none mt-3 w-25"%>
+  </div>
+</div>
